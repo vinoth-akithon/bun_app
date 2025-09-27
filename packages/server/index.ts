@@ -7,13 +7,13 @@ import type {Request, Response} from "express"
 dotenv.config()
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 app.get("/", (req: Request, res: Response) => {
-    return res.send("Hello World");
+    return res.send("Hello World!");
 })
 
 
-app.listen(3000, (e) => {
+app.listen(5000, (e) => {
     console.log(`Server is running at http://127.0.0.1:${port}`)
 })
