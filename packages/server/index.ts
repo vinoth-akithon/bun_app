@@ -12,6 +12,11 @@ const port = process.env.PORT || 5000;
 app.get("/", (req: Request, res: Response) => {
     return res.send("Hello World!");
 })
+app.get("/api/hello", (req: Request, res: Response) => {
+    return res.json({
+        message: "Hello World!"
+    });
+})
 
 
 app.listen(5000, (e) => {
