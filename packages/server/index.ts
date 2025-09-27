@@ -1,0 +1,19 @@
+import express from "express";
+import dotenv from "dotenv"
+
+import type {Request, Response} from "express"
+
+// loading environment variables
+dotenv.config()
+
+const app = express();
+const port = process.env.PORT || 3000;
+
+app.get("/", (req: Request, res: Response) => {
+    return res.send("Hello World");
+})
+
+
+app.listen(3000, (e) => {
+    console.log(`Server is running at http://127.0.0.1:${port}`)
+})
