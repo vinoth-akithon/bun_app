@@ -9,7 +9,7 @@ function App() {
       .then((res) => setMessage(res.message));
   }, []);
 
-  return <h1>{message}</h1>;
+  return <p className="font-bold p-4 bg-amber-200">{message}</p>;
 }
 
 export default App;
