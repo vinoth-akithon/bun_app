@@ -1,19 +1,20 @@
 {
-  "name": "bun_app",
-  "module": "index.ts",
-  "devDependencies": {
-    "@types/bun": "latest",
-    "concurrently": "^9.2.1"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  },
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "start": "bun run index.ts"
-  },
-  "workspaces": [
-    "packages/*"
-  ]
+   "name": "bun_app",
+   "module": "index.ts",
+   "devDependencies": {
+      "@types/bun": "latest",
+      "concurrently": "^9.2.1",
+      "prettier": "^3.6.2"
+   },
+   "peerDependencies": {
+      "typescript": "^5"
+   },
+   "private": true,
+   "type": "module",
+   "scripts": {
+      "start": "bun run index.ts"
+   },
+   "workspaces": [
+      "packages/*"
+   ]
 }
